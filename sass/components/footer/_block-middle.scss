@@ -1,0 +1,18 @@
+.join-block {
+  color: $white-color;
+}
+
+@media screen and (min-width: 1200px) {
+  .join-block {
+    position: absolute;
+    top: 12px;
+    left: 300px;
+    padding: 0;
+  }
+}
+
+.join-title {
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+}

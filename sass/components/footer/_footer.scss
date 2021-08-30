@@ -1,0 +1,14 @@
+footer {
+  background-color: $bg-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
