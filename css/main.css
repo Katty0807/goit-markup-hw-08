@@ -201,23 +201,27 @@ header {
 }
 
 .menu-button {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin: 0;
-  padding: 0;
-  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: transparent;
+  border: none;
+  z-index: 999;
 }
 
 .menu-button:hover, .menu-button:focus {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -225,9 +229,6 @@ header {
 
 .menu-button .icon-close {
   display: none;
-  position: absolute;
-  top: 10px;
-  right: 15px;
 }
 
 .menu-button.is-open .icon-close {
@@ -239,32 +240,72 @@ header {
 }
 
 .menu-container {
-  display: none;
-  height: 796px;
+  /*height: 796px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;*/
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 998;
 }
 
 .menu-container.is-open {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    padding: 48px 40px;
+    font-size: 40px;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 767px) {
+  .menu-container {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     height: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 93px;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.social-mobil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-mobil {
+    display: none;
   }
 }
 
@@ -366,6 +407,12 @@ header {
   line-height: 1.17;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits_title {
+    text-align: start;
+  }
 }
 
 .benefits_text {
@@ -483,6 +530,7 @@ header {
 
 .group {
   background-color: #f5f4fa;
+  width: 100%;
 }
 
 .team {
@@ -507,6 +555,9 @@ header {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px;
+  width: 450px;
+  height: 460px;
+  text-align: center;
 }
 
 .team_item:not(:first-child) {
@@ -519,15 +570,13 @@ header {
   .team_item {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    width: 450px;
-    height: 460px;
-    text-align: center;
   }
 }
 
 @media screen and (min-width: 481px) {
   .team_item:not(:first-child) {
     margin-left: 30px;
+    margin-top: 0;
   }
 }
 
@@ -626,6 +675,17 @@ footer {
   }
 }
 
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .column {
   display: inline-block;
   text-align: center;
@@ -703,14 +763,6 @@ footer {
   }
 }
 
-.join-title {
-  font-size: 14px;
-  font-weight: 700;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .form-footer {
   display: block;
   text-align: center;
@@ -726,14 +778,6 @@ footer {
     display: inline-block;
     text-align: start;
   }
-}
-
-.title-form {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .form-action {

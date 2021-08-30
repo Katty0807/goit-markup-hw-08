@@ -38,7 +38,11 @@
   margin-bottom: 10px;
   text-align: center;
 }
-
+@media screen and (min-width: 1200px) {
+  .benefits_title {
+    text-align: start;
+  }
+}
 .benefits_text {
   color: $secondary-color;
   font-weight: 400;
