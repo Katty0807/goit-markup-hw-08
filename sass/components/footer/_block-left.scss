@@ -1,5 +1,13 @@
 .column {
-  margin: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: start;
+    margin: 0;
+  }
 }
 .footer-logo {
   width: 145px;
@@ -7,19 +15,27 @@
   color: $white-color;
   margin-right: auto;
   margin-left: auto;
-}
 
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
 .address {
   width: 231px;
   height: 81px;
   margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
   color: $white-color;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .address_contact {
   display: block;

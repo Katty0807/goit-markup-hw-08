@@ -1,5 +1,7 @@
 .join-block {
   color: $white-color;
+  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -8,6 +10,8 @@
     top: 12px;
     left: 300px;
     padding: 0;
+    display: inline-block;
+    text-align: start;
   }
 }
 
