@@ -37,17 +37,15 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 998;
 }
-.menu-container.is-open {
-  display: block;
-}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%vw;
-    height: 796px;
+    width: 100%;
+
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -56,14 +54,14 @@
       display: block;
     }
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       position: relative;
       display: flex;
       height: 80px;
+      flex-grow: 1;
     }
 
     @media screen and (min-width: 1200px) {
-      margin-left: 93px;
       position: static;
       display: flex;
       justify-content: flex-start;
@@ -74,8 +72,11 @@
 
 .social-mobil {
   display: flex;
+  width: 357px;
+  height: 22px;
+  flex-grow: 1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .social-mobil {
     display: none;
   }

@@ -1,16 +1,23 @@
 .join-block {
   color: $white-color;
   display: block;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .join-block {
+    margin-bottom: 60px;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .join-block {
-    position: absolute;
+    align-items: baseline;
+    margin-left: 70px;
+    /*position: absolute;
     top: 12px;
     left: 300px;
     padding: 0;
     display: inline-block;
-    text-align: start;
+    text-align: start;*/
   }
 }
