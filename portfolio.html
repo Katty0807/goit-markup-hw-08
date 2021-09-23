@@ -18,32 +18,54 @@
 
 <header>
     <div class="container header">
-        <nav class="nav-links">
-            <a href="/" class="logo" lang="en">
-                <span class="logo_color">Web</span>Studio
-            </a>
-            <ul class="site-nav">
-                <li class="site-nav_item"> <a class="site-nav_link" href="./index.html">Студия</a></li>
-                <li class="site-nav_item"> <a class="site-nav_link site-nav_current" href="./portfolio.html">Портфолио</a> </li>
-                <li class="site-nav_item"> <a class="site-nav_link" href="">Контакты</a></li>
+
+        <a href="/" class="logo" lang="en">
+            <span class="logo_color">Web</span>Studio
+        </a>
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                <use class="icon-close" href="./image/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+
+            <nav class="nav-links">
+                <ul class="site-nav">
+                    <li class="site-nav_item"> <a class="site-nav_link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="site-nav_item"> <a class="site-nav_link site-nav_current" href="./portfolio.html">Портфолио</a> </li>
+                    <li class="site-nav_item"> <a class="site-nav_link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav">
+                <li class="auth-nav_item">
+                    <a class="auth-nav_link" lang="en" href="mailto:info@devstudio.com">
+                        <svg class="auth-nav_icon" width="16" height="12">
+                            <use href="./image/symbol-defs.svg#icon-envelope-1"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="auth-nav_item"><a class="auth-nav_link auth-nav_tel" href="tel:+380991111111">
+                        <svg class="auth-nav_icon" width="10" height="16">
+                            <use href="./image/symbol-defs.svg#icon-smartphone-1"></use>
+                        </svg>
+                        +38 099 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="auth-nav">
-            <li class="auth-nav_item">
-                <a class="auth-nav_link" lang="en" href="mailto:info@devstudio.com">
-                    <svg class="auth-nav_icon" width="16" height="12">
-                        <use href="./image/symbol-defs.svg#icon-envelope-1"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="auth-nav_item"><a class="auth-nav_link" href="tel:+380991111111">
-                    <svg class="auth-nav_icon" width="10" height="16">
-                        <use href="./image/symbol-defs.svg#icon-smartphone-1"></use>
-                    </svg>
-                    +38 099 111 11 11</a>
-            </li>
-        </ul>
+
+
+            <ul class="social-mobil">
+                <li class="social-mobil_item"> <a href="Instagram"></a>Instagram</li>
+                <li class="social-mobil_item"> <a href="Twitter"></a>Twitter</li>
+                <li class="social-mobil_item"> <a href="Facebook"></a>Facebook</li>
+                <li class="social-mobil_item"> <a href="LinkedIn"></a>LinkedIn</li>
+            </ul>
+
+        </div>
     </div>
 </header>
 
@@ -61,7 +83,7 @@
         </ul>
         
         <ul class="benefit">
-            <li class="card-list"> <a href="/">
+            <li class="card-list"> <a class="card-list_link" href="/">
                     <div class="thumb">
                         <img src="image/portfolio/img1sq.jpg" alt="Технокряк" width="370">
                         <div class="overlay">
@@ -76,7 +98,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                     <div class="thumb">
                         <img src="image/portfolio/img2sq.jpg" alt="Постер" width="370">
                         <div class="overlay">
@@ -92,7 +114,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img3sq.jpg" alt="Шаблон проекта Ресторана" width="370">
                         <div class="overlay">
@@ -108,7 +130,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img4sq.jpg" alt="Шаблон проекта" width="370">
                     <div class="overlay">
@@ -123,7 +145,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img5sq.jpg" alt="Шаблон проекта" width="370">
                         <div class="overlay">
@@ -139,7 +161,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                     <div class="thumb">
                         <img src="image/portfolio/img6sq.jpg" alt="Проект веб-сайта" width="370">
                         <div class="overlay">
@@ -155,7 +177,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img7sq.jpg" alt="Проект издания" width="370">
                         <div class="overlay">
@@ -171,7 +193,7 @@
                 </a>
             </li>
         
-            <li class="card-list" > <a href="/">
+            <li class="card-list" > <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img8sq.jpg" alt="Маркетинговый проект" width="370">
                         <div class="overlay">
@@ -188,7 +210,7 @@
             </li>
         
             <li class="card-list"> 
-                <a href="/">
+                <a class="card-list_link" href="/">
                    <div class="thumb">
                         <img src="image/portfolio/img9sq.jpg" alt="Шаблон приложения" width="370">
                         <div class="overlay">
@@ -218,15 +240,16 @@
             <a href="/" class="logo footer-logo" lang="en">
                 <span class="logo_color">Web</span>Studio
             </a>
+
             <address class="address">
-                <p>г. Киев, пр-т Леси Украинки, 26 </p>
+                <p class="address_map">г. Киев, пр-т Леси Украинки, 26 </p>
                 <a class="address_contact" href="mailto:info@example.com">info@example.com</a>
                 <a class="address_contact" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
         </div>
 
         <div class="join-block">
-            <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
             <ul class="social-link social-link--footer">
                 <li class="social-link_list">
                     <a class="social-link_icon social-link_icon--footer-bg" href="Instagram">
@@ -257,11 +280,11 @@
                     </a>
                 </li>
             </ul>
-        
-        
+
+
         </div>
         <div class="form-footer">
-            <b class="title-form">подпишитесь на рассылку</b>
+            <b class="footer-title">подпишитесь на рассылку</b>
             <form class="form-action">
                 <input class="form-action_input" type="email" name="mail" placeholder="E-mail">
                 <button class="button-footer" type="submit">Подписаться
@@ -275,5 +298,60 @@
 </footer>
 
 
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form">
+
+            <label class="form-label">
+                <span class="form-label_title"> Имя </span>
+                <input class="form-input" type="text" name="name" />
+                <svg class="form-input_icon" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-person"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">
+                <span class="form-label_title"> Телефон </span>
+                <input class="form-input" type="tel" name="tel" />
+                <svg class="form-input_icon" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-phone"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">
+                <span class="form-label_title"> Почта </span>
+                <input class="form-input" type="email" name="mail" />
+                <svg class="form-input_icon" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#icon-email"></use>
+                </svg>
+            </label>
+
+            <label class="form-label">
+                <span class="form-label_title"> Комментарий </span>
+                <textarea class="comment" name="comment" placeholder="Введите текст"></textarea>
+            </label>
+
+            <label class="checkbox-label">
+                <input class="checkbox" type="checkbox" name="licence" />
+                <span class="checkbox_icon"></span>
+                <span class="checkbox_text">
+                    Соглашаюсь с рассылкой и принимаю <a class="checkbox_licence-link" href="#"> Условия договора</a>
+                </span>
+            </label>
+
+            <button class="modal-button" type="submit">Отправить</button>
+        </form>
+
+        <button data-modal-close type="button" class="close-button">
+            <svg class="close-button_icon" width="18" height="18">
+                <use href="./image/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+</footer>
+
+<script src="./js/mobil.js"></script>
 </body>
 </html>

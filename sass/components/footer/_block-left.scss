@@ -26,11 +26,8 @@
   margin-top: 20px;
   font-style: normal;
   font-size: 14px;
-  line-height: 0.58;
   letter-spacing: 0.03em;
-  @media screen and (min-width: 1200px) {
-    line-height: 1.71;
-  }
+  line-height: 1.71;
 }
 .address_map {
   color: $white-color;
