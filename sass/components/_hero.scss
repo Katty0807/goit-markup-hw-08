@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/image/hero/Headerimg1x.jpg);
+    url(./image/hero/Headerimg1x.jpg);
   background-color: $bg-hero;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@
   screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/image/hero/Headerimg2x.jpg);
+      url(./image/hero/Headerimg2x.jpg);
   }
 }
 

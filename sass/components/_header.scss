@@ -17,19 +17,19 @@ header {
     padding-bottom: 25px;
   }
 }
-.header,
-.menu-container {
+
+.header {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 1199px) {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
+
+.menu-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -51,12 +51,18 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav,
-  .auth-nav {
+  .site-nav {
     display: flex;
   }
   .auth-nav {
-    flex-wrap: wrap;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: 281px;
+    }
   }
   .auth-nav_item:not(:last-child) {
     margin-bottom: 10px;
@@ -136,11 +142,10 @@ header {
   color: $accent-color;
 }
 @media screen and (min-width: 1200px) {
-  .auth-nav {
+  /*.auth-nav {
     display: flex;
-    justify-content: space-between;
-    margin-left: 281px;
-  }
+    margin-left: auto;
+  }*/
   .auth-nav_item:not(:first-child) {
     margin-left: 50px;
   }
@@ -148,9 +153,6 @@ header {
 
 .auth-nav_link {
   color: $secondary-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover,
   &:focus {

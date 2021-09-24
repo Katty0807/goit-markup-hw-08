@@ -1,7 +1,3 @@
-.benefit {
-  display: flex;
-  flex-wrap: wrap;
-}
 .button-list {
   display: flex;
   flex-wrap: wrap;
@@ -60,8 +56,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
   }
 }
 .card-list {
@@ -70,15 +64,8 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 440px;
-    top: 208px;
-    margin-left: 30px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 3 - 30px);
@@ -90,17 +77,6 @@
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
 }
-/*@media screen and (min-width: 1200px) {
-  .card-list {
-    width: 370px;
-    margin-right: 30px;
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
-  }*/
 
 .card-list:hover .overlay {
   transform: translateY(0);
@@ -110,7 +86,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
 }
 .thumb {
   position: relative;
