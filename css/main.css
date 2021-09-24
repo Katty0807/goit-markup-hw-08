@@ -152,6 +152,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -197,7 +198,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 281px;
+    margin-left: auto;
   }
 }
 
@@ -205,6 +206,15 @@ header {
   .auth-nav_item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .auth-nav_item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .site-nav_item {
     position: relative;
   }
@@ -254,7 +264,9 @@ header {
 
 .site-nav_link,
 .auth-nav_link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #212121;
   font-weight: 500;
   letter-spacing: 0.02em;

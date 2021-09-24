@@ -30,6 +30,7 @@ header {
 .menu-container {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -61,11 +62,15 @@ header {
 
     @media screen and (min-width: 1200px) {
       display: flex;
-      margin-left: 281px;
+      margin-left: auto;
     }
   }
   .auth-nav_item:not(:last-child) {
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
   .site-nav_item {
     position: relative;
@@ -109,7 +114,7 @@ header {
 
 .site-nav_link,
 .auth-nav_link {
-  display: block;
+  display: flex;
 
   color: $primary-text-color;
   font-weight: 500;
