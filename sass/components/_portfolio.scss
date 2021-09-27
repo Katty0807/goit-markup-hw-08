@@ -54,24 +54,30 @@
 }
 .benefit {
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 .card-list {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: 404px;
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+  /*@media screen and (min-width: 768px) {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
 
     @media screen and (min-width: 1200px) {
       flex-basis: calc(100% / 3 - 30px);
     }
-  }
+  }*/
   &:hover,
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
