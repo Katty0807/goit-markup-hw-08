@@ -1404,7 +1404,7 @@ footer {
 }
 
 .backdrop {
-  padding: 208px 159px 207px 159px;
+  /*padding: 208px 159px 207px 159px;*/
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -1452,27 +1452,6 @@ footer {
 @media screen and (orientation: landscape) and (max-width: 800px) {
   .modal {
     overflow: auto;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .modal {
-    width: 300px;
-    min-height: 623px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
   }
 }
 
@@ -1585,11 +1564,17 @@ footer {
   resize: none;
   outline: none;
   width: 100%;
-  height: 120px;
+  height: 70px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .comment {
+    height: 120px;
+  }
 }
 
 .comment:focus-within {

@@ -1,5 +1,5 @@
 .backdrop {
-  padding: 208px 159px 207px 159px;
+  /*padding: 208px 159px 207px 159px;*/
   overflow-y: scroll;
   position: fixed;
   top: 0;
@@ -33,18 +33,6 @@
 
   @media screen and (orientation: landscape) and (max-width: 800px) {
     overflow: auto;
-  }
-  @media screen and (max-width: 479px) {
-    width: 300px;
-    min-height: 623px;
-  }
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 609px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
   }
 
   background: $white-color;
